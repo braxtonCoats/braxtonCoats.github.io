@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.2da68edd.js",
-    "static/js/787.cf1fd063.chunk.js": "/static/js/787.cf1fd063.chunk.js",
+    "main.js": "/static/js/main.c40277ca.js",
+    "static/js/787.745d63b4.chunk.js": "/static/js/787.745d63b4.chunk.js",
     "static/media/Pendorama.png": "/static/media/Pendorama.a4062c1431c0e102e6b3.png",
     "static/media/DesignLibrary.jpg": "/static/media/DesignLibrary.ca6a99b82780da9d1226.jpg",
     "static/media/PendoProjectCover.jpg": "/static/media/PendoProjectCover.fbdd7d3ecb6a2e9a8831.jpg",
@@ -15,11 +15,11 @@
     "static/media/PPyearbook.png": "/static/media/PPyearbook.cd0a0e957b28a63a7713.png",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.2da68edd.js.map": "/static/js/main.2da68edd.js.map",
-    "787.cf1fd063.chunk.js.map": "/static/js/787.cf1fd063.chunk.js.map"
+    "main.c40277ca.js.map": "/static/js/main.c40277ca.js.map",
+    "787.745d63b4.chunk.js.map": "/static/js/787.745d63b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2da68edd.js"
+    "static/js/main.c40277ca.js"
   ]
 }
