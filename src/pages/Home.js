@@ -16,14 +16,13 @@ const Home = ({}) => {
       {/** H1 Title */}
       <Container
         sx={{
-          bgcolor: "background.main",
+          //bgcolor: "background.main",
           pt: 24,
         }}
       >
         <Typography
           variant="h2"
           align="center"
-          color="text.primary"
           gutterBottom
         >
           <Ditto componentId="home-page.intro" />

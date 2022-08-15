@@ -17,8 +17,7 @@ function MyApp() {
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        bgcolor: 'background.default',
-        color: 'text.primary',
+        //bgcolor: 'background.default',
         borderRadius: 1,
         p: 3,
       }}

@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { CustomPalette } from './theme/CustomPalette';
 import { Box } from '@mui/system';
 import { Switch } from '@mui/material';
+import { useTheme } from '@mui/material';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -23,15 +24,14 @@ function MyApp() {
 
 
   return (
-    <Box sx={{ bgcolor: 'background.main' }}>
+    <Box sx={{ /*bgcolor: 'background.main'*/ }}>
     <Router>
       <Navigation handleChange={colorMode.toggleColorMode} />
       <Routes>
-        <Route path="/" element={<Home />} />  
-        
-        <Route path='about-me' element={<AboutMe />} />
-        <Route path='project-1' element={<Project1 />} />
-        <Route path='project-2' element={<Project2 />} />
+        <Route exact path="/" element={<Home />} />  
+        <Route path='/about-me' element={<AboutMe />} />
+        <Route path='/project-1' element={<Project1 />} />
+        <Route path='/project-2' element={<Project2 />} />
       </Routes>
       <Footer />
     </Router>
@@ -64,12 +64,13 @@ export default function ToggleColorMode() {
 
       },
     }),
-    [],
+    [storedDarkMode],
   );
 
 
 
-  const theme = React.useMemo( () => createTheme(CustomPalette(mode)), [mode]);
+  //const theme = React.useMemo( () => createTheme(CustomPalette(mode)), [mode]);
+  const theme = useTheme(mode)
 
   return (
 
