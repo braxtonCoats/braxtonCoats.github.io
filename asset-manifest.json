@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.87e87092.js",
+    "main.js": "/static/js/main.9c49b06f.js",
     "static/js/787.745d63b4.chunk.js": "/static/js/787.745d63b4.chunk.js",
     "static/media/Graduation.JPG": "/static/media/Graduation.c7794d1cde71ec6f1ddd.JPG",
     "static/media/Internship.jpeg": "/static/media/Internship.6ecac707330b9ee19861.jpeg",
@@ -12,6 +12,7 @@
     "static/media/DesignLibrary.jpg": "/static/media/DesignLibrary.ca6a99b82780da9d1226.jpg",
     "static/media/PendoProjectCover.jpg": "/static/media/PendoProjectCover.fbdd7d3ecb6a2e9a8831.jpg",
     "static/media/ProfilePic.JPG": "/static/media/ProfilePic.8bd4590704d78880e22d.JPG",
+    "static/media/slack-picture.png": "/static/media/slack-picture.df3b99e0feb61db91752.png",
     "static/media/LLmock2.png": "/static/media/LLmock2.6d24845c85690c73c73d.png",
     "static/media/LLmock1.png": "/static/media/LLmock1.4e354b4951345c25df7b.png",
     "static/media/LLmock3-3.png": "/static/media/LLmock3-3.0e8fd9559fd594074c46.png",
@@ -24,11 +25,11 @@
     "static/media/zh.png": "/static/media/zh.975fe5615516ba4571c5.png",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.87e87092.js.map": "/static/js/main.87e87092.js.map",
+    "main.9c49b06f.js.map": "/static/js/main.9c49b06f.js.map",
     "787.745d63b4.chunk.js.map": "/static/js/787.745d63b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.87e87092.js"
+    "static/js/main.9c49b06f.js"
   ]
 }
