@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import PendoCover from '../assets/img/LL/PendoProjectCover.jpg';
+import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
 
 export default function ProjectCardPendo() {
     return (
@@ -40,7 +41,8 @@ export default function ProjectCardPendo() {
                 alignItems: 'center',
                 padding: '16px 32px',
                 gap: '16p'}}>
-                <Button variant="contained" size="small" href="/project-1">View Project</Button>
+                <Button variant='contained' component={RouterLink} to="/project-1">View Project</Button>
+
             </CardActions>
         </Card>
     );

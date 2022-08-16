@@ -180,7 +180,7 @@ export default function Project1() {
         <Grid xs={4}>
         <Card raised sx={{maxHeight: 500}}>
             <CardMedia component="img" image={LLtoday} alt="random" />
-          </Card>
+        </Card>
         </Grid>
         <Grid>
 
@@ -192,7 +192,7 @@ export default function Project1() {
           <Card raised align="center" sx={{maxWidth: 500, maxHeight: 500}}>
             <CardMedia component="img" image={Pendorama} alt="random" />
             <CardActions sx={{ padding: '16px 32px', justifyContent: 'center'}}>
-              <Button variant="contained">View Presentation</Button>
+              <Button variant="contained" href="https://go.pendo.io/Pendorama-December-2020.html" target="_blank">View Presentation</Button>
             </CardActions>
           </Card>
         </Grid>

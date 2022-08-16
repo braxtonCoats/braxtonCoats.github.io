@@ -12,6 +12,9 @@ import Avatar from '@mui/material/Avatar';
 import SvgIcon from '@mui/material/SvgIcon';
 import { useTheme } from '@mui/system';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
+import Logo from '../assets/img/Logo.png';
+import { Face } from '@mui/icons-material';
 
 function HomeIcon(props) {
   return (
@@ -28,15 +31,13 @@ function Navigation({handleChange}) {
     <AppBar >
       <Toolbar>
       <Tooltip title="Home">
-        <IconButton href='/' color='inherit' >
-          <HomeIcon />
+        <IconButton href='/' >
+          <Avatar alt="Remy Sharp" src={Logo} />
         </IconButton>
       </Tooltip>
         <Typography variant="h6" component="div" href='/' sx={{ flexGrow: 1 }}></Typography>
-          <Button variant='outline' href='/about-me'>About Me</Button>
-          <Tooltip title="Currently Unavalible">
-          <Button  variant='outline'>Resume</Button>
-          </Tooltip>
+          <Button variant='outline' startIcon={<HomeIcon />} component={RouterLink} to="/">Home</Button>
+          <Button variant='outline' startIcon={<Face />}ncomponent={RouterLink} to="/about-me">About Me</Button>
           {/*<Switch checked={isDarkMode} onClick={handleChange} /> */}
         {/*  <Tooltip title="Open settings">
              add: onClick={''} here 
@@ -44,12 +45,13 @@ function Navigation({handleChange}) {
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>*/}
-            <Tooltip title="View LinkedIn Profile">
-            <IconButton>
-              <LinkedInIcon fontSize='large' href='https://www.linkedin.com/in/braxton-coats/'
+            <Tooltip title="View LinkedIn Profile"color='inherit'>
+            <IconButton href='https://www.linkedin.com/in/braxton-coats/' target='blank'>
+              <LinkedInIcon fontSize='medium' 
                 sx={{color: 'primary.onMain'}}/>
             </IconButton>
             </Tooltip>
+
       </Toolbar>
     </AppBar>
   );

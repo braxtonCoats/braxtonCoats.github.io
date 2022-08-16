@@ -12,6 +12,8 @@ import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import placeholder from '../assets/img/placeholder-image.png';
 import DLcover from '../assets/img/DL/DesignLibrary.jpg';
+import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
+
 
 export default function ProjectCardDL() {
     return (
@@ -41,7 +43,9 @@ export default function ProjectCardDL() {
                 alignItems: 'center',
                 padding: '16px 32px',
                 gap: '16p'}}>
-                <Button variant="contained" size="small" href="/project-2">View Project</Button>
+                    
+                <Button variant='contained' component={RouterLink} to="/project-2">View Project</Button>
+
             </CardActions>
         </Card>
     );
