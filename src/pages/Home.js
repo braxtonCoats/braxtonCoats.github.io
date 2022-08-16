@@ -41,9 +41,9 @@ const Home = ({}) => {
         <Card sx={{ maxWidth: 200, mt: 2}}>
           <CardMedia component="img" image={SlackPic} alt="random" />
           <CardContent>
-            <Typography align="center" color='text.secondary' variant="body2">
+            <em><Typography align="center" color='text.secondary' variant="body2">
               Current Slack photo
-            </Typography>
+            </Typography></em>
           </CardContent>
         </Card>
       </Grid>

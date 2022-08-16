@@ -1,7 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.e2b00506.js",
+    "main.js": "/static/js/main.30ab8d2a.js",
     "static/js/787.745d63b4.chunk.js": "/static/js/787.745d63b4.chunk.js",
     "static/media/Graduation.JPG": "/static/media/Graduation.c7794d1cde71ec6f1ddd.JPG",
     "static/media/Internship.jpeg": "/static/media/Internship.6ecac707330b9ee19861.jpeg",
@@ -15,6 +14,7 @@
     "static/media/slack-picture.png": "/static/media/slack-picture.df3b99e0feb61db91752.png",
     "static/media/LLmock2.png": "/static/media/LLmock2.6d24845c85690c73c73d.png",
     "static/media/LLmock1.png": "/static/media/LLmock1.4e354b4951345c25df7b.png",
+    "static/media/CommunityTemplate.png": "/static/media/CommunityTemplate.367218e80bc115ea435b.png",
     "static/media/LLmock3-3.png": "/static/media/LLmock3-3.0e8fd9559fd594074c46.png",
     "static/media/LLmock3-2.png": "/static/media/LLmock3-2.04a8c9e8c0989b5db523.png",
     "static/media/LLmock3.png": "/static/media/LLmock3.94a219e7b6e1bcc5b1ff.png",
@@ -24,12 +24,10 @@
     "static/media/Logo.png": "/static/media/Logo.9fc8309d7ffae8dad6fa.png",
     "static/media/zh.png": "/static/media/zh.975fe5615516ba4571c5.png",
     "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.e2b00506.js.map": "/static/js/main.e2b00506.js.map",
+    "main.30ab8d2a.js.map": "/static/js/main.30ab8d2a.js.map",
     "787.745d63b4.chunk.js.map": "/static/js/787.745d63b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.e2b00506.js"
+    "static/js/main.30ab8d2a.js"
   ]
 }

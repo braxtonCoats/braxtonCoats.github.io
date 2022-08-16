@@ -1,16 +1,18 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import { Box, Divider } from "@mui/material";
+import { Box, CardHeader, Divider } from "@mui/material";
 import placeholder from "../assets/img/placeholder-image.png";
 import { Ditto } from "ditto-react";
-import { Card, CardMedia } from "@mui/material";
+import { Card, CardMedia, CardActions, CardContent } from "@mui/material";
 import BPdocumentation from "../assets/img/DL/BPdocumentation.png";
 import BPlibrary from "../assets/img/DL/BPlibrary.png";
 import PortalLR from "../assets/img/DL/Portal-lorez.png";
 import BPtemplate from "../assets/img/DL/BPtemplate.png";
+import CommunityTemplate from "../assets/img/DL/CommunityTemplate.png";
 import ZH from "../assets/img/DL/zh.png";
-import { Container } from "@mui/material";
+import { Container, Button } from "@mui/material";
+import DLcover from "../assets/img/DL/DesignLibrary.jpg";
 
 const tab = "\u00A0\u00A0\u00A0\u00A0\u00A0";
 
@@ -173,35 +175,96 @@ export default function P2() {
           </Typography>
         </Grid>
 
-        <Grid xs={4} pt={8} >
-        {/** Journey p-10 */}
-        <Typography paragraph>
-        {tab}<Ditto textId="text_62faf8086ec1ac009fee992a" />
-        </Typography>
+        <Grid xs={4} pt={8}>
+          {/** Journey p-10 */}
+          <Typography paragraph>
+            {tab}
+            <Ditto textId="text_62faf8086ec1ac009fee992a" />
+          </Typography>
         </Grid>
         <Grid xs={8} pb={12}>
-        <Card raised sx={{ maxHeight: 500 }}>
-          <CardMedia component="img" image={BPtemplate} alt="random" />
-        </Card>
+          <Card raised sx={{ maxHeight: 500 }}>
+            <CardMedia component="img" image={BPtemplate} alt="random" />
+          </Card>
         </Grid>
-
 
         <Grid xs={12}>
-        {/** Journey p-11 */}
-        <Typography paragraph>
-        {tab}<Ditto textId="text_62faf8086ec1ac009fee992b" />
-        </Typography>
+          {/** Journey p-11 */}
+          <Typography paragraph>
+            {tab}
+            <Ditto textId="text_62faf8086ec1ac009fee992b" />
+          </Typography>
         </Grid>
 
+        <Grid xs={12} align="center">
+          {/** Journey p-12 */}
+          <Typography pb={4} align="left" paragraph>
+            {tab}
+            <Ditto textId="text_62faf8086ec1ac009fee992c" />
+          </Typography>
+          <Card
+            align="center"
+            sx={{ maxWidth: 300 }}
+            href="https://zeroheight.com/"
+            target="blank"
+          >
+            <CardMedia component="img" image={ZH} alt="random" />
+          </Card>
+        </Grid>
 
-        {/** Journey p-12 */}
-        <Typography paragraph>
-        <Ditto textId="text_62faf8086ec1ac009fee992c" />
-        </Typography>
-        
-        <Container component="img" src={ZH} sx={{}}/>
+        {/** --------------------END JOURNEY----------------- */}
+
+        <Grid pt={8} xs={12} container justifyContent="center">
+          <Grid item xs={12}>
+            <Typography align="center" variant="h4">
+              Project Files
+            </Typography>
+          </Grid>
+          <Grid item xs={8}>
+            <Typography align='center' color='text.secondary'>
+              Note: These files are currently in progress and constantly changing. If one of the buttons below
+              is disbled then the document is currently not avalible for viewing.
+            </Typography>
+          </Grid>
 
 
+          <Grid xs={12} container spacing={12} alignItems='center' justifyContent='center'>
+            <Grid item flexDirection='column' justifyContent='center'>
+            <Card sx={{ maxWidth: 300, mt: 2 }}>
+              <CardHeader subheader="Final Design System" />
+              <CardMedia component="img" image={DLcover} alt="random" />
+              <CardActions sx={{ justifyContent: "flex-end" }}>
+                <Button
+                  variant="contained"
+                  href="https://zeroheight.com/63df57c99/p/5749f7-welcome-to-blueprint"
+                  target="blank"
+                >
+                  View
+                </Button>
+              </CardActions>
+            </Card>
+            </Grid>
+            <Grid item>
+            <Card sx={{ maxWidth: 300, mt: 2 }}>
+              <CardHeader subheader="Figma Community Template" />
+              <CardMedia
+                component="img"
+                image={CommunityTemplate}
+                alt="random"
+              />
+              <CardActions sx={{ justifyContent: "flex-end" }}>
+                <Button
+                  variant="contained"
+                  href="https://www.figma.com/community/file/1139649402100923524"
+                  target="blank"
+                >
+                  View
+                </Button>
+              </CardActions>
+            </Card>
+            </Grid>
+          </Grid>
+        </Grid>
 
         {/** Challenges */}
         <Grid pt={12} xs={12}>
@@ -210,23 +273,22 @@ export default function P2() {
           </Typography>
         </Grid>
 
-
         <Grid xs={12}>
-            {tab}
-            {/** Challenges p-1 */}
-            <Typography paragraph component="div">
+          {tab}
+          {/** Challenges p-1 */}
+          <Typography paragraph component="div">
             <Ditto textId="text_62f05ac0f475e74ce5ffd83c" />
-            </Typography>
-            </Grid>
-            <Grid xs={12}>
-            {/** Challenges p-1 */}
-            <Typography paragraph>
+          </Typography>
+        </Grid>
+        <Grid xs={12}>
+          {/** Challenges p-1 */}
+          <Typography paragraph>
             <Ditto textId="text_62faf9beb4a90a702606e539" />
-            </Typography>
-            </Grid>
-            <Grid xs={12}>
-            {/** Challenges p-1 */}
-            <Typography paragraph>
+          </Typography>
+        </Grid>
+        <Grid xs={12}>
+          {/** Challenges p-1 */}
+          <Typography paragraph>
             <Ditto textId="text_62fafaadd139c83b976579c9" />
           </Typography>
         </Grid>
