@@ -12,6 +12,7 @@ import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import PendoCover from '../assets/img/LL/PendoProjectCover.jpg';
 import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
+import { Ditto } from "ditto-react";
 
 export default function ProjectCardPendo() {
     return (
@@ -22,7 +23,7 @@ export default function ProjectCardPendo() {
             {/** Header */}
             <CardContent>
                 <Typography variant="h5" component="h2" color='primary.main'>
-                Pendo Customization
+                    <Ditto textId='text_62f05a6f481a4aaf356bf108' />
                 </Typography>
             </CardContent>
 

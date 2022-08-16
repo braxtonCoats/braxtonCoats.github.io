@@ -34,7 +34,7 @@ export default function Footer() {
           color="text.secondary"
           component="p"
         >
-          This portfolio was built <strong>by hand</strong> using{" "}
+          This portfolio was built <strong>from scratch</strong> using{" "}
           <Link href="https://reactjs.org/" target="blank">
             React
           </Link>{" "}

@@ -37,7 +37,8 @@ function Navigation({handleChange}) {
       </Tooltip>
         <Typography variant="h6" component="div" href='/' sx={{ flexGrow: 1 }}></Typography>
           <Button variant='outline' startIcon={<HomeIcon />} component={RouterLink} to="/">Home</Button>
-          <Button variant='outline' startIcon={<Face />}ncomponent={RouterLink} to="/about-me">About Me</Button>
+          <Button variant='outline' startIcon={<Face />} component={RouterLink} to="/about-me">About Me</Button>
+          
           {/*<Switch checked={isDarkMode} onClick={handleChange} /> */}
         {/*  <Tooltip title="Open settings">
              add: onClick={''} here 

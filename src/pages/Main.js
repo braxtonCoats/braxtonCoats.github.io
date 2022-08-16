@@ -10,15 +10,17 @@ import Project2 from './Project2.js';
 // and /schedule routes will match any pathname that starts
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
+
+
 const Main = () => (
   <main>
-    <Routes>
+  <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/about-me' element={<AboutMe />} />
       <Route path='/project-1' element={<Project1 />}/>
       <Route path='/project-2' element={<Project2 />}/>
     </Routes>
-  </main>
+    </main>
 )
 
 export default Main

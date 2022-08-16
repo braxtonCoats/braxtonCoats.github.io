@@ -193,17 +193,13 @@ export default function P2() {
         </Typography>
         </Grid>
 
-        <Container component="img" src={ZH} sx={{}}/>
 
         {/** Journey p-12 */}
         <Typography paragraph>
         <Ditto textId="text_62faf8086ec1ac009fee992c" />
         </Typography>
-
-        {/** Journey p-13 */}
-        <Typography paragraph>
-        <Ditto textId="text_62faf8cab7558e351d00d658" />
-        </Typography>
+        
+        <Container component="img" src={ZH} sx={{}}/>
 
 
 
