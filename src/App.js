@@ -27,9 +27,11 @@ export default function App() {
         projectId="project_62f05a6f45f99efffd0ab277"
       >
         <CssBaseline />
+        {/** 
         <NavigationScroll>
           <Routes />
-          </NavigationScroll>
+        </NavigationScroll>*/}
+        <Routes />
       </DittoProvider>
     </ThemeProvider>
     </StyledEngineProvider>

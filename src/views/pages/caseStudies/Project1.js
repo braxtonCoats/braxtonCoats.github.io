@@ -1,22 +1,23 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import placeholder from "../assets/images/placeholder-image.png";
-import LLmock1 from "../assets/images/LL/LLmock1.png";
-import LLmock2 from "../assets/images/LL/LLmock2.png";
-import LLmock3 from "../assets/images/LL/LLmock3.png";
-import LLmock32 from "../assets/images/LL/LLmock3-2.png";
-import LLmock33 from "../assets/images/LL/LLmock3-3.png";
-import LLtoday from "../assets/images/LL/LLtoday.png";
+import placeholder from "../../../assets/images/placeholder-image.png";
+import LLmock1 from "../../../assets/images/LL/LLmock1.png";
+import LLmock2 from "../../../assets/images/LL/LLmock2.png";
+import LLmock3 from "../../../assets/images/LL/LLmock3.png";
+import LLmock32 from "../../../assets/images/LL/LLmock3-2.png";
+import LLmock33 from "../../../assets/images/LL/LLmock3-3.png";
+import LLtoday from "../../../assets/images/LL/LLtoday.png";
+
 import Box from "@mui/material/Box";
 import { Ditto } from "ditto-react";
 import { CardActions, CardMedia } from "@mui/material";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Unstable_Grid2";
 import Card from "@mui/material/Card";
-import PP from "../assets/images/LL/PPyearbook.png";
+import PP from "../../../assets/images/LL/PPyearbook.png";
 import Divider from "@mui/material/Divider";
-import Pendorama from "../assets/images/LL/Pendorama.png";
+import Pendorama from "../../../assets/images/LL/Pendorama.png";
 
 const tab = "\u00A0\u00A0\u00A0\u00A0\u00A0";
 

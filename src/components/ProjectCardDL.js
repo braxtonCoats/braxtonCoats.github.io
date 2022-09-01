@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import placeholder from '../assets/images/placeholder-image.png';
-import DLcover from '../assets/images/DL/DesignLibrary.jpg';
+import DLcover from '../assets/images/DL/DesignLibrary.jpg'; 
 import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
 
 
@@ -29,7 +29,7 @@ export default function ProjectCardDL() {
             </CardContent>
 
             {/** Media */}
-            <CardMedia component="images"
+            <CardMedia component="img"
                 image={DLcover}
                 alt="random"
             />
@@ -40,7 +40,7 @@ export default function ProjectCardDL() {
                 padding: 2,
                 }}>
                     
-                <Button variant='contained' component={RouterLink} to="/project-2">View Project</Button>
+                <Button variant='contained' component={RouterLink} to="/case-studies/case-2">View Project</Button>
 
             </CardActions>
         </Card>

@@ -18,6 +18,7 @@ import Home from '../../views/Home';
 
 // assets
 import { IconChevronRight } from '@tabler/icons';
+import Dashboard from '../../views/dashboard/Default';
 
 // styles
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({ theme, open }) => ({
@@ -107,7 +108,7 @@ const MainLayout = () => {
             <Main theme={theme} open={leftDrawerOpened}>
                 {/* breadcrumb */}
                 <Breadcrumbs separator={IconChevronRight} navigation={navigation} icon title rightAlign />
-                <Home />
+                <Dashboard />
                 <Outlet />
             </Main>
             <Customization />

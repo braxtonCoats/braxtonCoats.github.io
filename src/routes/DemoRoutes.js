@@ -5,10 +5,6 @@ import MainLayout from '../layout/MainLayout';
 import Loadable from '../components/ui-component/Loadable';
 import HomeLayout from '../layout/HomeLayout';
 
-import HomePage from '../views/HomePage';
-import Project1 from '../views/pages/caseStudies/Project1';
-import Project2 from '../views/pages/caseStudies/Project2';
-
 // dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('../views/dashboard/Default')));
 
@@ -24,34 +20,24 @@ const SamplePage = Loadable(lazy(() => import('../views/sample-page')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
-const MainRoutes = {
+const DemoRoutes = {
     path: '/',
-    element: <HomeLayout />,
+    element: <MainLayout />,
     children: [
         {
+            path: '/portfolio',
+            element: <DashboardDefault />
+        },
+        {
             path: '/',
-            element: <HomePage />
+            element: <DashboardDefault />
         },
         {
-            path: 'case-studies',
+            path: 'dashboard',
             children: [
                 {
-                    path: 'case-1',
-                    element: <Project1 />
-                },
-                {
-                    path: 'case-2',
-                    element: <Project2 />
-                }
-            ]
-        },
-        {
-            path: 'design-system',
-            element: <MainLayout />,
-            children: [
-                {
-                    path: 'util-typography',
-                    element: <UtilsTypography />
+                    path: 'default',
+                    element: <DashboardDefault />
                 }
             ]
         },
@@ -64,7 +50,47 @@ const MainRoutes = {
                 }
             ]
         },
+        {
+            path: 'utils',
+            children: [
+                {
+                    path: 'util-color',
+                    element: <UtilsColor />
+                }
+            ]
+        },
+        {
+            path: 'utils',
+            children: [
+                {
+                    path: 'util-shadow',
+                    element: <UtilsShadow />
+                }
+            ]
+        },
+        {
+            path: 'icons',
+            children: [
+                {
+                    path: 'tabler-icons',
+                    element: <UtilsTablerIcons />
+                }
+            ]
+        },
+        {
+            path: 'icons',
+            children: [
+                {
+                    path: 'material-icons',
+                    element: <UtilsMaterialIcons />
+                }
+            ]
+        },
+        {
+            path: 'sample-page',
+            element: <SamplePage />
+        }
     ]
 };
 
-export default MainRoutes;
+export default DemoRoutes;

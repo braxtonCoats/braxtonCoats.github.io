@@ -30,7 +30,7 @@ export default function ProjectCardPendo() {
       </CardContent>
 
       {/** Media */}
-      <CardMedia component="images" image={PendoCover} alt="random" />
+      <CardMedia component="img" image={PendoCover} alt="random" />
 
       {/** Actions */}
       <CardActions
@@ -39,7 +39,7 @@ export default function ProjectCardPendo() {
           padding: 2,
         }}
       >
-        <Button variant="contained" component={RouterLink} to="/project-1">
+        <Button variant="contained" component={RouterLink} to="/case-studies/case-1">
           View Project
         </Button>
       </CardActions>
