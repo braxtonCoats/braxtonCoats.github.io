@@ -10,8 +10,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
-import placeholder from '../assets/img/placeholder-image.png';
-import DLcover from '../assets/img/DL/DesignLibrary.jpg';
+import placeholder from '../assets/images/placeholder-image.png';
+import DLcover from '../assets/images/DL/DesignLibrary.jpg';
 import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
 
 

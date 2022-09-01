@@ -13,7 +13,7 @@ import SvgIcon from '@mui/material/SvgIcon';
 import { useTheme } from '@mui/system';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
-import Logo from '../assets/img/Logo.png';
+import Logo from '../assets/images/Logo.png';
 import { Face } from '@mui/icons-material';
 
 function HomeIcon(props) {

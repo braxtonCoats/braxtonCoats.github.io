@@ -1,14 +1,14 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
-import placeholder from "../assets/img/placeholder-image.png";
+import placeholder from "../assets/images/placeholder-image.png";
 import Box from "@mui/material/Box";
 import { Ditto } from "ditto-react";
 import { CardActions, CardMedia} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import Card from "@mui/material/Card";
-import Graduation from '../assets/img/AboutMe/Graduation.JPG';
-import Internship from '../assets/img/AboutMe/Internship.jpeg';
-import ProfilePic from '../assets/img/AboutMe/ProfilePic.JPG';
+import Graduation from '../assets/images/AboutMe/Graduation.JPG';
+import Internship from '../assets/images/AboutMe/Internship.jpeg';
+import ProfilePic from '../assets/images/AboutMe/ProfilePic.JPG';
 
 
 const tab = "\u00A0\u00A0\u00A0\u00A0\u00A0";

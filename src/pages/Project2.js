@@ -2,17 +2,17 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { Box, CardHeader, Divider } from "@mui/material";
-import placeholder from "../assets/img/placeholder-image.png";
+import placeholder from "../assets/images/placeholder-image.png";
 import { Ditto } from "ditto-react";
 import { Card, CardMedia, CardActions, CardContent } from "@mui/material";
-import BPdocumentation from "../assets/img/DL/BPdocumentation.png";
-import BPlibrary from "../assets/img/DL/BPlibrary.png";
-import PortalLR from "../assets/img/DL/Portal-lorez.png";
-import BPtemplate from "../assets/img/DL/BPtemplate.png";
-import CommunityTemplate from "../assets/img/DL/CommunityTemplate.png";
-import ZH from "../assets/img/DL/zh.png";
+import BPdocumentation from "../assets/images/DL/BPdocumentation.png";
+import BPlibrary from "../assets/images/DL/BPlibrary.png";
+import PortalLR from "../assets/images/DL/Portal-lorez.png";
+import BPtemplate from "../assets/images/DL/BPtemplate.png";
+import CommunityTemplate from "../assets/images/DL/CommunityTemplate.png";
+import ZH from "../assets/images/DL/zh.png";
 import { Container, Button } from "@mui/material";
-import DLcover from "../assets/img/DL/DesignLibrary.jpg";
+import DLcover from "../assets/images/DL/DesignLibrary.jpg";
 
 const tab = "\u00A0\u00A0\u00A0\u00A0\u00A0";
 

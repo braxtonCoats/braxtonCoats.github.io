@@ -1,67 +1,66 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
-import ProjectCardPendo from "./ProjectCardPendo";
-import ProjectCardDL from "./ProjectCardDL";
+import ProjectCardPendo from "../components/ProjectCardPendo";
+import ProjectCardDL from "../components/ProjectCardDL";
 import { Ditto } from "ditto-react";
 import Grid from "@mui/material/Unstable_Grid2";
-import SlackPic from "../assets/img/AboutMe/slack-picture.png";
-import { Card, CardContent, CardMedia } from "@mui/material";
+import ProfilePic from "../assets/images/AboutMe/ProfilePic.JPG";
+import { Box, Typography, useTheme, Avatar } from "@mui/material"; 
 
 const Home = ({}) => {
+  const theme = useTheme();
+  const AvatarSize = 200;
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid mt={24} container>
-        <Grid xs={12}>
-        {/** H1 Title */}
-        <Typography align='center'
-          variant="h2"
-          gutterBottom
-        >
-          <Ditto componentId="home-page.intro" />
-        </Typography>
-        </Grid>
-        <Grid xs={12}>
-        <Typography align='center'
-          variant="h5"
-          color="text.secondary"
-          paragraph
-        >
-          <Ditto componentId="home-page.description" />
-        </Typography>
-        </Grid>
-      </Grid>
 
-      <Grid xs={12} justifyContent="center" container>
-        {/* Slack Picture */}
-        <Card sx={{ maxWidth: 200, mt: 2}}>
-          <CardMedia component="img" image={SlackPic} alt="random" />
-          <CardContent>
-            <em><Typography align="center" color='text.secondary' variant="body2">
-              Current Slack photo
-            </Typography></em>
-          </CardContent>
-        </Card>
-      </Grid>
-
-      <Stack
-        sx={{ pt: 4 }}
-        direction="row"
-        spacing={2}
+      {/** --- Grid container for Heading */}
+      <Grid
+        container
+        p={8}
+        spacing={8}
+        columnGap={8}
+        display='flex'
         justifyContent="center"
-      ></Stack>
+        alignItems="center"
+        sx={{ flexGrow: 1 }}
+      >
+        <Grid xs={5} 
+          align='right'
+        >
+          <Avatar
+            alt="braxton profile pic"
+            src={ProfilePic}
+            sx={{ width: AvatarSize, height: AvatarSize }}
+          />
+        </Grid>
+        <Grid
+          container
+          xs
+          display='flex'
+          zIndex={1}
+          direction="column"
+          justifyContent="center"
+        >
+          {/** H1 Title */}
+          <Typography variant="h2" >
+            <Ditto componentId="home-page.intro" />
+          </Typography>
+          <Typography variant="h6" color="text.secondary" paragraph>
+            <Ditto componentId="home-page.description" />
+          </Typography>
+        </Grid>
+      </Grid>
 
       {/** Container Grid of Cards */}
-      <Grid container spacing={8} ml={8} mr={8} mt={2}>
-        <Grid xs={6}>
+      <Grid container columnGap={8} rowGap={4}
+       p={8} display='flex' alignItems='center' justifyContent='center'>
+        <Grid md={4} xs={12}>
           <ProjectCardPendo />
         </Grid>
-        <Grid xs>
+        <Grid md xs={12}>
           <ProjectCardDL />
+        </Grid>
+        <Grid md xs={12}>
+          <ProjectCardPendo />
         </Grid>
       </Grid>
     </Box>

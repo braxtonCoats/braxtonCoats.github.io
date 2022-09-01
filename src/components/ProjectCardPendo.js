@@ -10,7 +10,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
-import PendoCover from '../assets/img/LL/PendoProjectCover.jpg';
+import PendoCover from '../assets/images/LL/PendoProjectCover.jpg';
 import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
 import { Ditto } from "ditto-react";
 
