@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 
 // project imports
-import MainLayout from '../layout/MainLayout';
+import DSLayout from '../layout/DSLayout';
 import Loadable from '../components/ui-component/Loadable';
 import HomeLayout from '../layout/HomeLayout';
 
@@ -22,7 +22,7 @@ const SamplePage = Loadable(lazy(() => import('../views/sample-page')));
 
 const DemoRoutes = {
     path: '/',
-    element: <MainLayout />,
+    element: <DSLayout />,
     children: [
         {
             path: '/portfolio',

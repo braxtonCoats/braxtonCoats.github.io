@@ -8,7 +8,7 @@ import { AppBar, Box, CssBaseline, Toolbar, useMediaQuery } from '@mui/material'
 
 // project imports
 import Breadcrumbs from '../../components/ui-component/extended/Breadcrumbs';
-import Header from './Header';
+import Header from './Appbar';
 import Sidebar from './Sidebar';
 import Customization from '../Customization';
 import navigation from '../../menu-items';
@@ -66,7 +66,7 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({
 
 // ==============================|| MAIN LAYOUT ||============================== //
 
-const MainLayout = () => {
+const DSLayout = () => {
     const theme = useTheme();
     const matchDownMd = useMediaQuery(theme.breakpoints.down('lg'));
 
@@ -116,4 +116,4 @@ const MainLayout = () => {
     );
 };
 
-export default MainLayout;
+export default DSLayout;

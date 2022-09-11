@@ -4,7 +4,6 @@ import { Button, Card, CardContent, Grid, Stack, Typography } from '@mui/materia
 
 // project imports
 import AnimateButton from '../../../../components/ui-component/extended/AnimateButton';
-
 // styles
 const CardStyle = styled(Card)(({ theme }) => ({
     background: theme.palette.warning.light,

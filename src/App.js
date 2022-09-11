@@ -11,8 +11,9 @@ import {
 import { CustomTheme } from "./theme/CustomTheme";
 import ScrollTop from "./components/ScrollTop";
 import Routes from './routes';
+import DemoRoutes from "./routes/DemoRoutes";
 import themes from './themes';
-import NavigationScroll from './layout/MainLayout'
+import NavigationScroll from './layout/DSLayout'
 
 export default function App() {
   const customization = useSelector((state) => state.customization);
@@ -26,12 +27,12 @@ export default function App() {
         source={dittodata}
         projectId="project_62f05a6f45f99efffd0ab277"
       >
-        <CssBaseline />
+        <CssBaseline /> 
         {/** 
         <NavigationScroll>
           <Routes />
-        </NavigationScroll>*/}
-        <Routes />
+        </NavigationScroll> */}
+         <Routes /> 
       </DittoProvider>
     </ThemeProvider>
     </StyledEngineProvider>

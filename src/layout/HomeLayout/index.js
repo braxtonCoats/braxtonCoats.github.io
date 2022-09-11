@@ -14,8 +14,7 @@ import {
 
 // project imports
 import Breadcrumbs from "../../components/ui-component/extended/Breadcrumbs";
-import Header from "../MainLayout/Header";
-import Sidebar from "../MainLayout/Sidebar";
+import Header from './Header';
 import Customization from "../Customization";
 import navigation from "../../menu-items";
 import { drawerWidth } from "../../store/constant";
@@ -23,6 +22,10 @@ import { SET_MENU } from "../../store/actions";
 
 // assets
 import { IconChevronRight } from "@tabler/icons";
+import Dashboard from '../../views/dashboard/Default';
+import Sidebar from './Sidebar';
+
+
 
 import Navigation from "../../components/Navigation";
 import HomePage from "../../views/HomePage";
@@ -39,7 +42,7 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
         duration: theme.transitions.duration.leavingScreen,
       }),
       [theme.breakpoints.up("md")]: {
-        marginLeft: -(drawerWidth - 20),
+        marginLeft: '20px',
         width: `calc(100% - ${drawerWidth}px)`,
       },
       [theme.breakpoints.down("md")]: {
@@ -78,12 +81,15 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
 const HomeLayout = () => {
   const theme = useTheme();
   const matchDownMd = useMediaQuery(theme.breakpoints.down("lg"));
+  const matchUpMd = useMediaQuery(theme.breakpoints.up('md'));
 
   // Handle left drawer
   const leftDrawerOpened = useSelector((state) => state.customization.opened);
+  const leftDrawerClosed = useSelector((state) => state.customization.closed);
+
   const dispatch = useDispatch();
   const handleLeftDrawerToggle = () => {
-    dispatch({ type: SET_MENU, opened: !leftDrawerOpened });
+    dispatch({ type: SET_MENU, opened: !leftDrawerClosed });
   };
 
   useEffect(() => {
@@ -112,8 +118,11 @@ const HomeLayout = () => {
         </Toolbar>
       </AppBar>
 
+ {/* drawer 
+ <Sidebar drawerOpen={leftDrawerOpened} drawerToggle={handleLeftDrawerToggle} />
+      */}
       {/* main content */}
-      <Main theme={theme} open={leftDrawerOpened}>
+      <Main theme={theme} >
         {/* breadcrumb */}
         <Breadcrumbs
           separator={IconChevronRight}
@@ -122,6 +131,7 @@ const HomeLayout = () => {
           title
           rightAlign
         />
+
         <Outlet />
       </Main>
       <Customization />

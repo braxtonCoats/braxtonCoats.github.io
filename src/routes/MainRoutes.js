@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 
 // project imports
-import MainLayout from '../layout/MainLayout';
+import DSLayout from '../layout/DSLayout';
 import Loadable from '../components/ui-component/Loadable';
 import HomeLayout from '../layout/HomeLayout';
 
@@ -47,11 +47,11 @@ const MainRoutes = {
         },
         {
             path: 'design-system',
-            element: <MainLayout />,
+            element: <DSLayout />,
             children: [
                 {
-                    path: 'util-typography',
-                    element: <UtilsTypography />
+                    path: 'design-system',
+                    element: <HomePage />
                 }
             ]
         },
@@ -64,7 +64,7 @@ const MainRoutes = {
                 }
             ]
         },
-    ]
+    ],
 };
 
 export default MainRoutes;

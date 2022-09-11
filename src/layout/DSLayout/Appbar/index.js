@@ -5,10 +5,10 @@ import { useTheme } from '@mui/material/styles';
 import { Avatar, Box, Button, ButtonBase } from '@mui/material';
 
 // project imports
-import LogoSection from '../LogoSection';
-import SearchSection from './SearchSection';
+import LogoSection from '../../DSLayout/LogoSection';
+//import SearchSection from './SearchSection';
 import ProfileSection from './ProfileSection';
-import NotificationSection from './NotificationSection';
+import ButtonsSection from './ButtonsSection';
 
 // assets
 import { IconMenu2 } from '@tabler/icons';
@@ -20,7 +20,7 @@ const Header = ({ handleLeftDrawerToggle }) => {
 
     return (
         <>
-            {/* logo & toggler button */}
+            {/* nav expander and logo */}
             <Box
                 sx={{
                     width: 228,
@@ -30,9 +30,7 @@ const Header = ({ handleLeftDrawerToggle }) => {
                     }
                 }}
             >
-                <Box component="span" sx={{ display: { xs: 'none', md: 'block' }, flexGrow: 1 }}>
-                    <LogoSection />
-                </Box>
+                {/** Nav expand and collapse */}
                 <ButtonBase sx={{ borderRadius: '12px', overflow: 'hidden' }}>
                     <Avatar
                         variant="rounded"
@@ -53,15 +51,22 @@ const Header = ({ handleLeftDrawerToggle }) => {
                         <IconMenu2 stroke={1.5} size="1.3rem" />
                     </Avatar>
                 </ButtonBase>
+
+                {/** logo section */}
+                <Box component="span" sx={{ pl: 2, pr: 2, display: { xs: 'none', md: 'block' }, flexGrow: 1 }}>
+                    <LogoSection />
+                </Box>
+                
             </Box>
 
-            {/* header search 
-            <SearchSection />*/}
-            <Box sx={{ flexGrow: 1 }} />
+            {/* header */}
             <Box sx={{ flexGrow: 1 }} />
 
+            {/** Buttons section */}
+            <ButtonsSection />
+
             {/* notification & profile */}
-            <NotificationSection />
+            {/* <NotificationSection /> */}
             <ProfileSection />
         </>
     );
