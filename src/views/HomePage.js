@@ -52,11 +52,9 @@ const Home = ({}) => {
       {/** Container Grid of Cards */}
       <Grid
         container
-        columnGap={16}
+        columnGap={4}
         rowGap={1}
-        p={2}
         display="flex"
-        alignItems="center"
         justifyContent="center"
       >
         <Grid md={4} xs={12}>
