@@ -14,7 +14,7 @@ import {
 
 // project imports
 import Breadcrumbs from "../../components/ui-component/extended/Breadcrumbs";
-import Header from './Header';
+import Header from "./Header";
 import Customization from "../Customization";
 import navigation from "../../menu-items";
 import { drawerWidth } from "../../store/constant";
@@ -22,13 +22,8 @@ import { SET_MENU } from "../../store/actions";
 
 // assets
 import { IconChevronRight } from "@tabler/icons";
-import Dashboard from '../../views/dashboard/Default';
-import Sidebar from './Sidebar';
-
-
-
-import Navigation from "../../components/Navigation";
-import HomePage from "../../views/HomePage";
+import Dashboard from "../../views/dashboard/Default";
+import Sidebar from "./Sidebar";
 
 // styles
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
@@ -42,7 +37,7 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
         duration: theme.transitions.duration.leavingScreen,
       }),
       [theme.breakpoints.up("md")]: {
-        marginLeft: '20px',
+        marginLeft: "20px",
         width: `calc(100% - ${drawerWidth}px)`,
       },
       [theme.breakpoints.down("md")]: {
@@ -81,15 +76,13 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
 const HomeLayout = () => {
   const theme = useTheme();
   const matchDownMd = useMediaQuery(theme.breakpoints.down("lg"));
-  const matchUpMd = useMediaQuery(theme.breakpoints.up('md'));
+  const matchUpMd = useMediaQuery(theme.breakpoints.up("md"));
 
   // Handle left drawer
   const leftDrawerOpened = useSelector((state) => state.customization.opened);
-  const leftDrawerClosed = useSelector((state) => state.customization.closed);
-
   const dispatch = useDispatch();
   const handleLeftDrawerToggle = () => {
-    dispatch({ type: SET_MENU, opened: !leftDrawerClosed });
+    dispatch({ type: SET_MENU, opened: !leftDrawerOpened });
   };
 
   useEffect(() => {
@@ -108,9 +101,7 @@ const HomeLayout = () => {
         elevation={0}
         sx={{
           bgcolor: theme.palette.background.default,
-          transition: leftDrawerOpened
-            ? theme.transitions.create("width")
-            : "none",
+          transition: leftDrawerOpened ? theme.transitions.create("width") : "none",
         }}
       >
         <Toolbar>
@@ -118,11 +109,8 @@ const HomeLayout = () => {
         </Toolbar>
       </AppBar>
 
- {/* drawer 
- <Sidebar drawerOpen={leftDrawerOpened} drawerToggle={handleLeftDrawerToggle} />
-      */}
       {/* main content */}
-      <Main theme={theme} >
+      <Main theme={theme} open={leftDrawerOpened}>
         {/* breadcrumb */}
         <Breadcrumbs
           separator={IconChevronRight}

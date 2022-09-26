@@ -7,15 +7,15 @@ const icons = { IconDashboard };
 // ==============================|| DASHBOARD MENU ITEMS ||============================== //
 
 const dashboard = {
-    id: 'dashboard',
-    title: 'Dashboard',
+    id: 'home',
+    title: 'Home',
     type: 'group',
     children: [
         {
-            id: 'default',
-            title: 'Dashboard',
+            id: 'home',
+            title: 'Home',
             type: 'item',
-            url: '/dashboard/default',
+            url: '/',
             icon: icons.IconDashboard,
             breadcrumbs: false
         }

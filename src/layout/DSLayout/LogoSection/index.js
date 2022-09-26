@@ -7,9 +7,6 @@ import { ButtonBase } from '@mui/material';
 import config from '../../../config';
 import Logo from '../../../components/ui-component/Logo';
 
-//braxton logo
-import BCDLogo from '../../../assets/images/Logo.png';
-
 // ==============================|| MAIN LOGO ||============================== //
 
 const LogoSection = () => (

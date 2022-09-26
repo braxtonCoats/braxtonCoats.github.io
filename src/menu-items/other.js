@@ -1,33 +1,40 @@
 // assets
-import { IconBrandChrome, IconHelp } from '@tabler/icons';
+import { IconTypography, IconPalette, IconShadow, IconWindmill } from '@tabler/icons';
 
 // constant
-const icons = { IconBrandChrome, IconHelp };
+const icons = {
+    IconTypography,
+    IconPalette,
+    IconShadow,
+    IconWindmill
+};
+
 
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
 
-const other = {
-    id: 'sample-docs-roadmap',
-    type: 'group',
-    children: [
-        {
-            id: 'sample-page',
-            title: 'Sample Page',
-            type: 'item',
-            url: '/sample-page',
-            icon: icons.IconBrandChrome,
-            breadcrumbs: false
-        },
-        {
-            id: 'documentation',
-            title: 'Documentation',
-            type: 'item',
-            url: 'https://codedthemes.gitbook.io/berry/',
-            icon: icons.IconHelp,
-            external: true,
-            target: true
-        }
-    ]
+const designSystem1 = {
+            id: 'icons',
+            title: 'Icons',
+            type: 'collapse',
+            icon: icons.IconWindmill,
+            children: [
+                {
+                    id: 'tabler-icons',
+                    title: 'Tabler Icons',
+                    type: 'item',
+                    url: '/icons/tabler-icons',
+                    breadcrumbs: false
+                },
+                {
+                    id: 'material-icons',
+                    title: 'Material Icons',
+                    type: 'item',
+                    url: '/icons/material-icons',
+                    breadcrumbs: false
+                }
+            ]
+        
+    
 };
 
-export default other;
+export default designSystem1;
