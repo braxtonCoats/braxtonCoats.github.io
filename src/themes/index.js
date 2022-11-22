@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import { dark } from '@mui/material/styles/createPalette';
 
 // assets
 import colors from '../assets/scss/_themes-vars.module.scss';

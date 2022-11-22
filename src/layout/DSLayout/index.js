@@ -107,7 +107,12 @@ const DSLayout = () => {
             {/* main content */}
             <Main theme={theme} open={leftDrawerOpened}>
                 {/* breadcrumb */}
+
+                {/** uncomment for breadcrumbs 
+                 *  issue with breadcrumb updated when home icon hit
+                 * 
                 <Breadcrumbs separator={IconChevronRight} navigation={navigation} icon title rightAlign />
+                */}
                 <Dashboard />
                 <Outlet />
             </Main>

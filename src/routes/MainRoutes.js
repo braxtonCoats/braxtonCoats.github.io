@@ -49,8 +49,12 @@ const MainRoutes = {
             path: 'design-system',
             children: [
                 {
-                    path: 'design-system',
-                    element: <HomePage />
+                    path: 'foundation',
+                    children: [{
+                        path: 'utils/util-color',
+                        element: <UtilsColor />
+                    }]
+                    
                 },
                 {
                     path: 'case-2',

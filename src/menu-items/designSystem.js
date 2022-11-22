@@ -23,11 +23,11 @@ const designSystem = {
             icon: icons.IconWindmill,
             children: [
                 {
-                    id: 'util-color',
+                    id: 'color',
                     title: 'Color',
                     type: 'item',
                     icon: icons.IconPalette,
-                    url: '/utils/util-color',
+                    url: '/design-system/foundation/utils/util-color',
                     breadcrumbs: false
                 },
                 

@@ -1,23 +1,25 @@
 import PropTypes from 'prop-types';
+import * as React from 'react';
+
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Avatar, Box, Button, ButtonBase } from '@mui/material';
+import { Avatar, Box, Button, ButtonBase, Switch } from '@mui/material';
 
 // project imports
 import LogoSection from '../../DSLayout/LogoSection';
 //import SearchSection from './SearchSection';
 import ProfileSection from './ProfileSection';
-import ButtonsSection from './ButtonsSection';
+import ThemeSwitch from './ButtonsSection';
 
 // assets
 import { IconMenu2 } from '@tabler/icons';
 
 // ==============================|| MAIN NAVBAR / HEADER ||============================== //
 
+
 const Header = ({ handleLeftDrawerToggle }) => {
     const theme = useTheme();
-
     return (
         <>
             {/* nav expander and logo */}
@@ -60,11 +62,13 @@ const Header = ({ handleLeftDrawerToggle }) => {
             </Box>
 
             {/* header */}
-            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ flexGrow: 1 }} />        
 
-            {/** Buttons section */}
-            <ButtonsSection />
+            {/** Theme switcher not functional
+            <ThemeSwitch />
+            */}
 
+            
             {/* notification & profile */}
             {/* <NotificationSection /> */}
             <ProfileSection />

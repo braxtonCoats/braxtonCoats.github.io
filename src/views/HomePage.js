@@ -39,11 +39,16 @@ const Home = ({}) => {
           direction="column"
           justifyContent="center"
         >
+
+          { /** current theme test
+            <Typography variant="h1">{theme.palette.mode} mode</Typography>
+           */}
+
           {/** H1 Title */}
-          <Typography variant="h2">
+          <Typography variant="h1">
             <Ditto componentId="home-page.intro" />
           </Typography>
-          <Typography variant="h6" color="text.secondary" paragraph>
+          <Typography variant="h4" color="text.secondary" paragraph>
             <Ditto componentId="home-page.description" />
           </Typography>
         </Grid>

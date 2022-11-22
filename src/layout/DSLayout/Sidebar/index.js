@@ -37,7 +37,10 @@ const Sidebar = ({ drawerOpen, drawerToggle, window }) => {
                     }}
                 >
                     <MenuList />
+
+                    {/** Undeed card, keeping for reference
                     <MenuCard />
+                     */}
                 </PerfectScrollbar>
             </BrowserView>
             <MobileView>
